@@ -8,7 +8,7 @@ var edge = require('electron-edge-js');
 
 
 const assemblyFileDll = 'PTZDevice.dll';
-const baseDllPath = assemblyFileDll;
+const baseDllPath = path.join(__dirname, assemblyFileDll);
 
 
 const ptzClassName = 'PTZ.PTZDeviceHelper';
