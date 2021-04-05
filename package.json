@@ -1,0 +1,22 @@
+{
+  "name": "@joraclista/ptz-edge-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron --core main.js"
+  },
+  "keywords": [
+    "edge-js",
+    "electron",
+    "ptz"
+  ],
+  "author": "joraclista",
+  "license": "ISC",
+  "dependencies": {
+    "edge-js": "^15.5.2",
+    "electron": "^11.1.1",
+    "electron-edge-js": "^12.18.5"
+  }
+}

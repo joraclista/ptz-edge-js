@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="UTF-8">
+    <title>Electron-Edge-Js + PTZ Test Page</title>
+    <script>
+        require('./renderer.js')
+    </script>
+      <link rel="stylesheet" href="default.css">
+  </head>
+  <body>
+    <h3 id="test">
+        Electron-Edge-Js + PTZ Test Page (Electron, edge-js,.NET)
+    </h3>
+
+    <table>
+        <tr>
+            <th style="background: #c4d4e5" colspan="2">
+            </th>
+        </tr>
+        <tr>
+            <th class="method">Method Name</th>
+            <th>Result</th>
+        </tr>
+        <tr>
+            <td class="method">GetCameraZoomInfo</td>
+            <td><pre id="GetCameraZoomInfo"></pre></td>
+        </tr>
+        <tr>
+            <td class="method">ZoomIn</td>
+            <td><input id="ZoomIn" 
+			           type="button" 
+					   style="width:100px" 
+					   value="ZoomIn"></td>
+        </tr>
+        <tr>
+            <td class="method">ZoomOut</td>
+            <td><input id="ZoomOut" 
+			           type="button" 
+					   style="width:100px" 
+					   value="ZoomOut"></td>
+        </tr>
+		<tr>
+            <td class="method">Pan</td>
+            <td>
+				<input id="Pan"
+				       type="button"
+					   style="width:100px" 
+					   value="Pan">
+				<input id="PanValue" 
+				       type="text" 
+					   value="500">
+				<input id="Left" 
+				       type="button" 
+					   style="width:50px" 
+					   value="Left">
+				<input id="Right" 
+				       type="button" 
+					   style="width:50px" 
+					   value="Right">
+			</td>
+        </tr>
+		<tr>
+            <td class="method">Tilt</td>
+            <td>
+				<input id="Tilt" 
+				       type="button" 
+					   style="width:100px" 
+					   value="Tilt">
+				<input id="TiltValue" 
+				       type="text" 
+					   value="500">
+				<input id="Up" 
+				       type="button" 
+					   style="width:50px" 
+					   value="Up">
+				<input id="Down" 
+				       type="button" 
+					   style="width:50px" 
+					   value="Down">
+			</td>
+        </tr>
+    </table>
+    <br/>
+
+  </body>
+</html>
