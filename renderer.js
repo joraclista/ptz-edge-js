@@ -35,46 +35,32 @@ window.onload = function() {
 			updateZoomInfo();
 		});
 	}
-	
-	document.getElementById("Pan").onclick = function() {
-		ptz.moveCamera({'name':'PTZ Pro 2', 'pan':getIntFromId('PanValue'), 'tilt':0}, function (error, result) {
-			if (error) throw error;
-			console.log(result);
-		});
-	}
-	
+
 	document.getElementById("Left").onclick = function() {
-		ptz.moveCamera({'name':'PTZ Pro 2', 'pan':-500, 'tilt':0}, function (error, result) {
+		ptz.moveCameraLeft('PTZ Pro 2', function (error, result) {
 			if (error) throw error;
 			console.log(result);
 		});
 	}
 	
 	document.getElementById("Right").onclick = function() {
-		ptz.moveCamera({'name':'PTZ Pro 2', 'pan':500, 'tilt':0}, function (error, result) {
+		ptz.moveCameraRight('PTZ Pro 2', function (error, result) {
 			if (error) throw error;
 			console.log(result);
 		});
 	}
 	
-	document.getElementById("Tilt").onclick = function() {
-		ptz.moveCamera({'name':'PTZ Pro 2', 'pan':0, 'tilt':getIntFromId('TiltValue')}, function (error, result) {
-			if (error) throw error;
-			console.log(result);
-		});
-	}
 	document.getElementById("Up").onclick = function() {
-		ptz.moveCamera({'name':'PTZ Pro 2', 'pan':0, 'tilt':500}, function (error, result) {
+		ptz.moveCameraUp('PTZ Pro 2', function (error, result) {
 			if (error) throw error;
 			console.log(result);
 		});
 	}
 	document.getElementById("Down").onclick = function() {
-		ptz.moveCamera({'name':'PTZ Pro 2', 'pan':0, 'tilt':-500}, function (error, result) {
+		ptz.moveCameraDown('PTZ Pro 2', function (error, result) {
 			if (error) throw error;
 			console.log(result);
 		});
 	}
-	
 
 }

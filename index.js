@@ -34,10 +34,29 @@ var moveCamera = edge.func({
     methodName: 'Move'
 });
 
+var moveCameraLeft = function(name, callback) {
+	return moveCamera({'name':name,'pan':-10, 'tilt':0}, callback);
+}
+
+var moveCameraRight = function(name, callback) {
+	return moveCamera({'name':name,'pan':10, 'tilt':0}, callback);
+}
+
+var moveCameraUp = function(name, callback) {
+	return moveCamera({'name':name,'pan':0, 'tilt':10}, callback);
+}
+
+var moveCameraDown = function(name, callback) {
+	return moveCamera({'name':name,'pan':0, 'tilt':-10}, callback);
+}
+
 module.exports = {
    getCameraZoomInfo,
    zoomInCamera,
    zoomOutCamera,
-   moveCamera
+   moveCameraLeft,
+   moveCameraRight,
+   moveCameraUp,
+   moveCameraDown
 }
 
