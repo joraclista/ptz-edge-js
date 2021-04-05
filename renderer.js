@@ -1,7 +1,5 @@
 const path = require('path');
 
-
-var edge = require('electron-edge-js');
 var ptz = require('./index.js');
 
 process.env.EDGE_USE_CORECLR = 1;

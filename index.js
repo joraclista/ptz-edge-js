@@ -3,9 +3,6 @@ const path = require('path');
 
 var edge = require('electron-edge-js');
 
-//process.env.EDGE_USE_CORECLR = 1;
-
-
 
 const assemblyFileDll = 'PTZDevice.dll';
 const baseDllPath = path.join(__dirname, assemblyFileDll);
