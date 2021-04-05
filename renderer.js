@@ -21,7 +21,7 @@ window.onload = function() {
 	updateZoomInfo();
 
     document.getElementById("ZoomIn").onclick = function() {
-		ptz.zoomInCamera({'name':'PTZ Pro 2'}, function (error, result) {
+		ptz.zoomIn('PTZ Pro 2', function (error, result) {
 			if (error) throw error;
 			console.log(result);
 			updateZoomInfo();
@@ -29,7 +29,7 @@ window.onload = function() {
 	}
 
 	document.getElementById("ZoomOut").onclick = function() {
-		ptz.zoomOutCamera({'name':'PTZ Pro 2'}, function (error, result) {
+		ptz.zoomOut('PTZ Pro 2', function (error, result) {
 			if (error) throw error;
 			console.log(result);
 			updateZoomInfo();
@@ -37,27 +37,27 @@ window.onload = function() {
 	}
 
 	document.getElementById("Left").onclick = function() {
-		ptz.moveCameraLeft('PTZ Pro 2', function (error, result) {
+		ptz.moveLeft('PTZ Pro 2', function (error, result) {
 			if (error) throw error;
 			console.log(result);
 		});
 	}
 	
 	document.getElementById("Right").onclick = function() {
-		ptz.moveCameraRight('PTZ Pro 2', function (error, result) {
+		ptz.moveRight('PTZ Pro 2', function (error, result) {
 			if (error) throw error;
 			console.log(result);
 		});
 	}
 	
 	document.getElementById("Up").onclick = function() {
-		ptz.moveCameraUp('PTZ Pro 2', function (error, result) {
+		ptz.moveUp('PTZ Pro 2', function (error, result) {
 			if (error) throw error;
 			console.log(result);
 		});
 	}
 	document.getElementById("Down").onclick = function() {
-		ptz.moveCameraDown('PTZ Pro 2', function (error, result) {
+		ptz.moveDown('PTZ Pro 2', function (error, result) {
 			if (error) throw error;
 			console.log(result);
 		});
